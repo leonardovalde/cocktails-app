@@ -1,12 +1,13 @@
 'use client'
 import styles from './SearchComponent.module.css'
 import { useCocktailByName } from '../hooks/useCoctails'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import SearchCocktailPreview from './SearchCocktailPreview'
 function SearchComponent () {
   const [visible, setVisible] = useState(false)
   const [search, setSearch] = useState('')
   const [foundList, setFoundList] = useState([])
+  const debounceRef = useRef()
   useEffect(() => {
     if (search) {
       setVisible(true)
@@ -16,7 +17,11 @@ function SearchComponent () {
   }, [foundList, visible])
   const handleInput = async (event) => {
     setSearch(event.target.value)
-    setFoundList(event.target.value ? await useCocktailByName(event.target.value) : null)
+    if (debounceRef.current) { clearTimeout(debounceRef.current) }
+
+    debounceRef.current = setTimeout(async () => {
+      setFoundList(event.target.value ? await useCocktailByName(event.target.value) : null)
+    }, 300)
   }
   return (
     <form className={styles.searchForm}>
@@ -27,9 +32,9 @@ function SearchComponent () {
             <ul>
               {foundList
                 ? foundList.map((cocktail, i) => (
-                <li key={i}>
-                  <SearchCocktailPreview cocktail={cocktail}/>
-                </li>
+                  <li key={i}>
+                    <SearchCocktailPreview cocktail={cocktail} />
+                  </li>
                 ))
                 : <></>}
             </ul>
