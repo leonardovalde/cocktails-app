@@ -1,3 +1,28 @@
 .pageHeader{
-    height: 130px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    padding: 28px 44px;
+    padding-bottom: 0px;
+}
+.pageHeader>h1{
+    
+}
+.pageHeaderTitle{
+    color: #A4A4A4;
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 0px;
+}
+
+.pageHeaderTitle  > span{
+    color: #ff7979;
+}
+
+.pageHeaderSubtitle{
+    color: #A4A4A4;
+    font-size: 18px;
+    font-weight: 500;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-bottom: 0px;
 }

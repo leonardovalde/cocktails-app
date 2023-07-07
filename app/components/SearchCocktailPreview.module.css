@@ -1,0 +1,57 @@
+.SearchCocktailContainer {
+  border-radius: 15px;
+  padding: 0px 10px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 4px 18px;
+  background-color: white;
+  height: 100px;
+}
+
+.SearchCocktailContainer:hover {
+  transition: all 0.2s ease;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.SearchCocktailContainer > img {
+  border: 1px solid beige;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: auto auto;
+}
+.SearchCocktailDetails {
+  margin: auto 0;
+}
+.SearchCocktailDetails > h1 {
+  font-size: 15px;
+  font-weight: 400;
+}
+.SearchCocktailDetails > ul {
+  display: flex;
+  flex-direction: row;
+}
+.SearchCocktailDetails > ul > li {
+  font-size: 10px;
+  font-weight: 500;
+  margin-right: 6px;
+}
+.categoryCocktailDetails {
+  padding: 3px;
+  background: rgba(255, 121, 121, 0.15);
+  border-radius: 38px;
+  color: #ff7979;
+}
+
+.alcoholicCocktailDetails {
+  padding: 3px;
+  background: rgba(96, 211, 114, 0.15);
+  border-radius: 38px;
+  color: #60d372;
+}
+.glassCocktailDetails {
+  padding: 3px;
+  background: rgba(96, 211, 211, 0.15);
+  border-radius: 38px;
+  color: #60d3d3;
+}

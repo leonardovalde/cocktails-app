@@ -11,3 +11,10 @@ export async function useCocktailById (id) {
   )
   return cocktails.drinks
 }
+
+export async function useCocktailByName (name) {
+  const cocktails = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${name}`).then(
+    res => res.json()
+  )
+  return cocktails.drinks
+}
