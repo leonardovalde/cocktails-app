@@ -1,0 +1,22 @@
+.categoriesnav{
+    color: white;
+    width: 100%;
+    align-self: center;
+}
+
+.categoriesnav h1{
+    font-size: 22px;
+    border-bottom: 1px solid white;
+    padding-right: 4px;
+    display: inline;
+}
+.categoriesnav li{
+    font-size: 14px;
+}
+
+.categoriesnav li:hover{
+    color: lightsteelblue;
+}
+
+
+
