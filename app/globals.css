@@ -10,7 +10,7 @@
   height: 82vh;
 }
 .navContainer {
-  padding: 21px 25px;
+  padding: 21px 20px 21px 30px;
   min-height: 100vh;
   float: left;
   background-color: #ff7979;
@@ -25,10 +25,13 @@
 }
 
 .cocktailsContainer{
-  overflow-y: auto;
-  height: 100vh;
+  height: calc(100vh - 130px);
   padding: 50px 70px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 20px;
+}
+
+main{
+  overflow-y: auto;
 }
