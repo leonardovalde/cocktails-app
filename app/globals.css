@@ -24,7 +24,7 @@
   font-weight: 500;
 }
 
-.cocktailsContainer{
+.cocktailsContainer {
   height: calc(100vh - 130px);
   padding: 20px 70px;
   display: grid;
@@ -32,6 +32,99 @@
   gap: 20px;
 }
 
-main{
+main {
   overflow-y: auto;
+}
+
+.cocktailDescriptionContainer {
+  padding: 10px 90px;
+  display: flex;
+  flex-direction: row;
+}
+.left-description {
+  width: 40%;
+  justify-content: left;
+}
+
+.left-description > h2 {
+  color: #a0a0a0;
+  font-size: 18px;
+  padding-bottom: 25px;
+}
+.left-description > img {
+  width: 90%;
+}
+
+.right-description {
+  width: 60%;
+  padding-top: 47px;
+}
+
+.cocktailTags {
+  display: flex;
+  flex-direction: row;
+}
+
+.right-description > h2 {
+  color: #4e4e4e;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.right-description > h3 {
+  color: #4e4e4e;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.right-description > p {
+  font-size: 12px;
+  color: #bebebe;
+  font-weight: 400;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  text-align: justify;
+}
+.cocktailTags {
+  gap: 10px;
+  padding-bottom: 21px;
+  padding-top: 5px;
+}
+
+.categoryCocktailDetails {
+  padding: 3px;
+  background: rgba(255, 121, 121, 0.15);
+  border-radius: 38px;
+  color: #ff7979;
+}
+
+.alcoholicCocktailDetails {
+  padding: 3px;
+  background: rgba(96, 211, 114, 0.15);
+  border-radius: 38px;
+  color: #60d372;
+}
+.glassCocktailDetails {
+  padding: 3px;
+  background: rgba(96, 211, 211, 0.15);
+  border-radius: 38px;
+  color: #60d3d3;
+}
+
+.ingredientList {
+  padding-top: 12px;
+  padding-left: 15px;
+  font-size: 12px;
+  list-style: disc;
+  color: #a4a4a4;
+}
+
+.ingredientDescription{
+  padding: 2px;
+}
+
+.ingredientMeasure {
+  padding: 1px 2px;
+  border-radius: 3px;
+  border: 0.5px solid #a0a0a0;
 }

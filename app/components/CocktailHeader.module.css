@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 3fr 2fr;
     padding: 28px 44px;
-    padding-bottom: 0px;
+    padding-bottom: 30px;
 }
 .pageHeaderTitle{
     color: #A4A4A4;
@@ -19,7 +19,7 @@
     color: #A4A4A4;
     font-size: 18px;
     font-weight: 500;
-    padding-top: 40px;
+    padding-top: 35px;
     padding-left: 30px;
     padding-bottom: 0px;
 }

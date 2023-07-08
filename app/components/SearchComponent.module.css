@@ -16,10 +16,11 @@
 .listDiv {
   overflow-y: scroll;
   overflow: auto;
+  padding-bottom: 10px;
   padding-top: 16px;
   position: absolute;
   z-index: 10;
-  height: 300px;
+  max-height: 350px;
   width: 100%;
   border-radius: 5px;
   margin-top: 8px;
