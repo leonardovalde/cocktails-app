@@ -1,12 +1,12 @@
 'use client'
 import Link from 'next/link'
-import Categories from '../mocks/categories.json'
 import styles from './CategoriesBar.module.css'
 import { useState, useEffect } from 'react'
-function CategoriesBar () {
-  const CategoryList = Categories.drinks
+
+function CategoriesBar ({ list }) {
+  const CategoryList = list
   const [categorySelected, setCategorySelected] = useState(CategoryList[0].strCategory)
-  useEffect(() => { console.log(categorySelected) }, [categorySelected])
+  useEffect(() => {}, [categorySelected])
   return (
         <nav className={styles.categoriesnav}>
             <h1>Categorías</h1>

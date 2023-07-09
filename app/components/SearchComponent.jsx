@@ -18,7 +18,6 @@ function SearchComponent () {
   const handleInput = async (event) => {
     setSearch(event.target.value)
     if (debounceRef.current) { clearTimeout(debounceRef.current) }
-
     debounceRef.current = setTimeout(async () => {
       setFoundList(event.target.value ? await useCocktailByName(event.target.value) : null)
     }, 300)
