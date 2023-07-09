@@ -1,34 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Cocktails app
 
-## Getting Started
+Este proyecto se desarrollo con el fin de consumir la api thecocktaildb https://www.thecocktaildb.com/, permitiendo indexar por categorias de cockteles, buscar cocteles en especifico y ver la descripcion de cada uno de ellos
 
-First, run the development server:
+## Configuración
+
+Sigue estos pasos para configurar y ejecutar el proyecto en tu máquina local.
+
+### Prerrequisitos
+
+Asegúrate de tener instalado lo siguiente:
+
+- Node.js
+- npm
+
+### Instalación
+
+1. Clona el repositorio en tu máquina local:
+
+```bash
+git clone https://github.com/leonardovalde/cocktails-app.git
+```
+
+2.  Navega hasta la carpeta del proyecto:
+
+```bash
+cd cocktails-app/
+```
+
+3. Instala las dependencias del proyecto ejecutando el siguiente comando:
+```bash
+npm install
+```
+
+### Ejecución
+
+Una vez que hayas completado la instalación, puedes ejecutar el proyecto con el siguiente comando:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Este comando iniciará el servidor de desarrollo y podrás acceder a la aplicación en tu navegador en http://localhost:3000.
