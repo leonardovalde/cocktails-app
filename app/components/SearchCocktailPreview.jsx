@@ -3,7 +3,7 @@ import Link from 'next/link'
 function SearchCocktailPreview (cocktail) {
   return (
         <Link href={`/cocktail/${cocktail.cocktail.idDrink}`} >
-            <div className={styles.SearchCocktailContainer}>
+            <div className={styles.SearchCocktailContainer} id='search-cocktail-preview'>
                 <div className={styles.SearchCocktailDetails}>
                     <h1>{cocktail.cocktail.strDrink}</h1>
                     <ul>
