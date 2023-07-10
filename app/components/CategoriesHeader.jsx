@@ -1,5 +1,6 @@
 import styles from './CategoriesHeader.module.css'
 import SearchComponent from './SearchComponent'
+// Esta es la cabezera del componente de la lista de cocteles segun la categoria
 function CategoriesHeader ({ category }) {
   return (
     <div className={styles.pageHeader}>

@@ -1,6 +1,7 @@
 import CategoriesHeader from '@/app/components/CategoriesHeader'
 import { useCocktailsByCategory } from '../../hooks/useCoctails'
 import CocktailCard from '@/app/components/CocktailCard'
+// Este componente hace referencia a de cocteles segun la categoria
 async function CategoryPage ({ params }) {
   const cocktails = await useCocktailsByCategory(params.category)
   return (

@@ -1,5 +1,6 @@
 import styles from './SearchCocktailPreview.module.css'
 import Link from 'next/link'
+// Este componente redeiza la previsualizacion de los cocteles resultados de la busqueda
 function SearchCocktailPreview (cocktail) {
   return (
         <Link href={`/cocktail/${cocktail.cocktail.idDrink}`} >

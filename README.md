@@ -40,3 +40,11 @@ Una vez que hayas completado la instalación, puedes ejecutar el proyecto con el
 npm run dev
 ```
 Este comando iniciará el servidor de desarrollo y podrás acceder a la aplicación en tu navegador en http://localhost:3000.
+
+### Ejecución
+
+Para validar las pruebas unitarias, ejecutamos el comando
+
+```bash
+npm test
+```

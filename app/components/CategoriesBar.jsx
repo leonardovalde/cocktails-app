@@ -3,6 +3,7 @@ import Link from 'next/link'
 import styles from './CategoriesBar.module.css'
 import { useState, useEffect } from 'react'
 
+// Este es un componente tipo cliente, el cual es el encargado de hacer la navegacion entre categorias
 function CategoriesBar ({ list }) {
   const CategoryList = list
   const [categorySelected, setCategorySelected] = useState(CategoryList[0].strCategory)

@@ -3,6 +3,7 @@ import styles from './SearchComponent.module.css'
 import { useCocktailByName } from '../hooks/useCoctails'
 import { useEffect, useRef, useState } from 'react'
 import SearchCocktailPreview from './SearchCocktailPreview'
+// Renderiza un componente de búsqueda con un campo de entrada y una lista de resultados de búsqueda.
 function SearchComponent () {
   const [visible, setVisible] = useState(false)
   const [search, setSearch] = useState('')

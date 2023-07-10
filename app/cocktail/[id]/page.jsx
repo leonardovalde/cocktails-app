@@ -1,6 +1,7 @@
 import CocktailHeader from '@/app/components/CocktailHeader'
 import { useCocktailById } from '@/app/hooks/useCoctails'
 
+// Este componente es la descripcion de los cocteles
 async function CocktailDetails ({ params }) {
   const CocktailDetails = await useCocktailById(params.id)
   const ingredients = getIngredients(CocktailDetails[0])
@@ -41,6 +42,7 @@ async function CocktailDetails ({ params }) {
   )
 }
 
+// Este metodo recibe el objeto del coctel, y valida los ingredientes que no son nulos y los gurada en un objeto
 function getIngredients (CocktailDetails) {
   const ingredients = []
   for (let i = 1; i <= 15; i++) {
