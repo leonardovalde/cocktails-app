@@ -1,3 +1,7 @@
+# Despliegue
+
+https://cocktails-app-three.vercel.app/
+
 # Cocktails app
 
 Este proyecto se desarrollo con el fin de consumir la api thecocktaildb https://www.thecocktaildb.com/, permitiendo indexar por categorias de cockteles, buscar cocteles en especifico y ver la descripcion de cada uno de ellos
